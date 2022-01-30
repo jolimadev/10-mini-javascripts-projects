@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmemetemplatehouse.com%2Fwp-content%2Fuploads%2F2020%2F08%2Fleonardo-dicaprio-throwing-money-wolf-of-the-wall-street-meme-template.jpg&f=1&nofb=1');
+    background-position: center ;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    min-height: 100vh;
+
+}
+
+.money {
+    position: fixed;
+    top: -1vh;
+    font-size: 1.8rem; /*agrande el emoji/i make more bigger the emoji's*/
+    transform: translateY(0); /* el eje y*/
+    animation: fall 3s linear forwards;  /*animacion cada 3sec de forma linear- falling animation in linear way*/
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(105vh);
+    }
+}

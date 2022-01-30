@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(51, 128, 243);
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:0;
+    min-height: 100vh;
+}
+
+.btn {
+    background-color: yellow;
+    color: black;
+    border-radius: 5px;
+    border: none;
+    margin: 1rem; 
+    font-family: inherit;
+    font-size: 1.2rem;
+    padding: 1.5rem 3rem;
+}

@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    min-height: 100vh;
+}
+
+button {
+    background-color: coral;
+    color: white;
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-family: inherit;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    border:none; /*le quita el borde fuerte pero mantiene el radius y sombreado de arriba*/
+    transition: transform 0.1s linear; /*duration,duracion*/
+}
+
+button:focus {
+    outline:none
+}
+
+button:active {
+    box-shadow: 0;
+    transform: translate(2px, 2px); /*when you click..get a little movement from the button,le da un movimiento de arriba abajo chico que queda bien a la vista cuando das click*/
+}

@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@700&display=swap');
+
+
+*{
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Dongle', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    min-height: 100vh;
+    text-align: center;
+    padding: 5rem;
+    
+    transition: background 0.3s linear, color 0.3s linear;
+}
+
+body.dark {
+    background-color: #1f1f1f;  /* una vez creada la clase dark en el script se hace este otro body para el tema oscuro*/
+    color: white;
+}
+
+.toggle-container {
+    position: fixed;
+    top: 10px;        /*me permite mover la barrita del toggle arriba a la izquierda*/
+    right:10px;    
+}
+
+label {
+    background-color:indigo;   /*esto es al pedo de lable podes cancelar el input y dejarlo com oestaba es por puro gusto*/
+    border-radius: 50%;
+    display: inline-block; 
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    user-select: none; /*none :El texto y sus sub elementos no son seleccionables. Tenga en cuenta que el objeto Selection puede contener estos elementos.*/
+    transition: background 0.3s linear;
+}
+
+body.dark label {
+
+    background-color: #fff;
+}
+
+
+input {
+    visibility: hidden; /*oculta el cuadradito es a elección yo lo dejo a la vista*/
+}

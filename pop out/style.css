@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    min-height: 100vh;
+}
+
+button {
+    background-color:rgb(240, 240, 93);
+    color: white;
+    padding: 1rem;
+    border-radius: 4px;
+    border: none;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.popup-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none; /*tapa el container del pop up ,ya que solo queremos que aparezca al darle al open, we don't show the container, at least we click at the button open*/
+    align-items: center;    /*centre el popup en el medio*/
+    justify-content: center;
+}
+
+
+.popup-container.active {
+    display: flex;
+}
+
+.popup {
+    background-color: #fff;
+    border-radius: 5px;
+    position: relative; 
+    box-shadow: 2px 2pc 10px rgba(0, 0, 0, 0.3); /*la sombrita debajo del popup- shadow under popup*/
+    padding: 2rem; 
+    width: 500px; 
+}
+
+.popup button {
+    background-color: #fff;
+    color:rgb(240, 240, 93);
+    font-size: 2rem;
+    position: absolute;
+    top: 10px;         /*el botton del popup lo dejamos arrioba ala derecha- we position the button right on the window*/
+    right: 10px;
+}
